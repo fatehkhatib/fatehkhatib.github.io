@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy - Prayer Counter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Prayer Tracker</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --accent: #1f7a4d;
+    --border: #e4e4e4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --text: #f0f0f0;
+      --muted: #a8a8a8;
+      --accent: #4cbf87;
+      --border: #2c2c2c;
+    }
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 36px;
+    margin-bottom: 8px;
+    color: var(--accent);
+  }
+  p {
+    margin: 0 0 12px;
+  }
+  ul {
+    margin: 0 0 12px;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  a {
+    color: var(--accent);
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+  .todo {
+    background: rgba(255, 196, 0, 0.15);
+    border: 1px dashed #c99a00;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+</style>
 </head>
-<body style="font-family: sans-serif; max-width: 600px; margin: 40px auto; line-height: 1.6;">
-  <h1>Privacy Policy — Prayer Counter</h1>
-  <p><strong>Last updated:</strong> August 2026</p>
-  <p>This app does not collect, store, or transmit any personal data to the developer or any third party. All prayer counts and history are stored locally on your device only.</p>
-  <p><strong>Camera:</strong> The app uses your device's front camera to detect prayer movements by measuring on-screen brightness changes. Video is processed in real time, entirely on your device, and is never recorded, saved, or transmitted anywhere.</p>
-  <p><strong>Location:</strong> The app may request access to your location to calculate local prayer times. This is used and cached on your device only, is never transmitted anywhere, and isn't required for the app's core counting feature — if access is denied, counting still works, just without prayer-time labeling.</p>
-  <p>No account, contact information, or other personal identifiers are required or collected by this app.</p>
-  <p>If you have any questions about this privacy policy, please contact the developer.</p>
+<body>
+  <div class="container">
+    <h1>Privacy Policy — Prayer Tracker</h1>
+    <p class="updated">Last updated: August 2026</p>
+
+    <p>Prayer Tracker is designed to work entirely on your device. This policy explains exactly what the app accesses and why.</p>
+
+    <h2>Camera</h2>
+    <p>Prayer Tracker uses your device's front camera to detect your body position during prayer, by measuring changes in brightness as you move into and out of sajdah (prostration). This is how the app automatically counts your rak'ahs and sajdahs.</p>
+    <ul>
+      <li>Camera frames are analyzed instantly, on your device, and are not recorded or saved by default.</li>
+      <li>Optional: if you turn on "Record video for review" in Settings (off by default), the app records a temporary video of your prayer so you can watch it back afterward. This video is stored only on your device, is automatically deleted the moment you close the review screen, and is never saved to your Camera Roll or transmitted anywhere.</li>
+    </ul>
+
+    <h2>Location</h2>
+    <p>Prayer Tracker uses your device's location, with your permission, to calculate accurate local prayer times (Fajr, Dhuhr, Asr, Maghrib, Isha) so it can correctly label and organize your prayer history. Prayer times are calculated entirely on your device using standard astronomical formulas — your location is never sent to any server or third party. It's cached locally on your device so it doesn't need to be requested repeatedly.</p>
+
+    <h2>Prayer History</h2>
+    <p>Your prayer records (prayer name, date, duration, and rak'ah/sajdah counts) are stored locally on your device only. This history is never uploaded, synced, or transmitted anywhere. Prayer Tracker does not require or use any account, sign-in, or personal identifiers.</p>
+
+    <h2>No Data Collection or Sharing</h2>
+    <p>Prayer Tracker does not collect, transmit, sell, or share any personal data with the developer, advertisers, analytics providers, or any other third party. The app contains no advertising or analytics SDKs.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>Prayer Tracker does not knowingly collect information from anyone, including children, because it does not collect information at all.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If this policy changes, the "Last updated" date above will be revised accordingly.</p>
+
+    <h2>Contact</h2>
+    <p>If you have any questions about this privacy policy, please contact <span class="todo">your-email@example.com</span>.</p>
+
+    <hr>
+    <p style="color: var(--muted); font-size: 0.85rem;">Prayer Tracker</p>
+  </div>
 </body>
 </html>
