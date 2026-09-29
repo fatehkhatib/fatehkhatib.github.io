@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Prayer Tracker</title>
+<title>Privacy Policy — Rakah Prayer Counter</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -78,38 +78,43 @@
 </head>
 <body>
   <div class="container">
-    <h1>Privacy Policy — Prayer Tracker</h1>
-    <p class="updated">Last updated: August 2026</p>
+    <h1>Privacy Policy — Rakah Prayer Counter</h1>
+    <p class="updated">Last updated: September 2026</p>
 
-    <p>Prayer Tracker is designed to work entirely on your device. This policy explains exactly what the app accesses and why.</p>
+    <p>Rakah Prayer Counter is designed to work entirely on your device. This policy explains exactly what the app accesses and why.</p>
 
     <h2>Camera</h2>
-    <p>Prayer Tracker uses your device's front camera to detect your body position during prayer, by measuring changes in brightness as you move into and out of sajdah (prostration). This is how the app automatically counts your rak'ahs and sajdahs.</p>
+    <p>Rakah Prayer Counter uses your device's front camera to count your sajdahs (prostrations) during prayer. This is how the app automatically counts your rak'ahs and sajdahs.</p>
     <ul>
-      <li>Camera frames are analyzed instantly, on your device, for this purpose.</li>
-      <li>By default, the app also records a temporary video of your prayer so you can watch it back afterward — for example to check your sajdah form. This video is stored only on your device, is automatically deleted the moment you close the review screen, and is never saved to your Camera Roll or transmitted anywhere. You can turn this off anytime in Settings ("Record video for review").</li>
+      <li><strong>In a lit room</strong>, the app measures changes in brightness as you move into and out of sajdah.</li>
+      <li><strong>In a room too dark for that</strong> — Fajr or Isha with the lights off, for example — on iPhones with Face ID the app instead uses the front depth camera (the TrueDepth camera that Face ID uses) to measure how far away the nearest surface is. Coming down into sajdah brings you close to the phone, which is how the app counts in the dark.</li>
+      <li>Depth data is used only as a distance measurement. The app does not create or keep an image or map of your face, does not use Face ID, and does not identify or recognize anyone.</li>
+      <li>Camera frames and depth readings are analyzed instantly, on your device, for this purpose only. They are never stored or transmitted.</li>
+      <li>Optionally, you can turn on "Record video as a backup check" in Settings. It is <strong>off by default</strong>. When it's on, the app records a temporary video of your prayer so you can watch it back and confirm the count yourself. This video is stored only on your device, is automatically deleted the moment you close the review screen, and is never saved to your Camera Roll or transmitted anywhere. In a room too dark to count by light, no video is kept.</li>
     </ul>
 
     <h2>Location</h2>
-    <p>Prayer Tracker uses your device's location, with your permission, to calculate accurate local prayer times (Fajr, Dhuhr, Asr, Maghrib, Isha) so it can correctly label and organize your prayer history. Prayer times are calculated entirely on your device using standard astronomical formulas — your location is never sent to any server or third party. It's cached locally on your device so it doesn't need to be requested repeatedly.</p>
+    <p>Rakah Prayer Counter uses your device's location, with your permission, to calculate accurate local prayer times (Fajr, Dhuhr, Asr, Maghrib, Isha) so it can correctly label and organize your prayer history. Prayer times are calculated entirely on your device using standard astronomical formulas — your location is never sent to any server or third party. It's cached locally on your device so it doesn't need to be requested repeatedly.</p>
+    <p>If you use the Qibla direction, the app also reads your device's compass, on your device, to point toward the Kaaba. The app's Home Screen widget uses the same prayer-time settings to show your next prayer; they are shared only between the app and its widget on your device.</p>
 
     <h2>Prayer History</h2>
-    <p>Your prayer records (prayer name, date, duration, and rak'ah/sajdah counts) are stored locally on your device only. This history is never uploaded, synced, or transmitted anywhere. Prayer Tracker does not require or use any account, sign-in, or personal identifiers.</p>
+    <p>Your prayer records are stored locally on your device only: prayer name, date, duration, and rak'ah/sajdah counts, together with how each prayer was counted — by light or by depth, the room's brightness level, the count before any correction you made, and when each sajdah occurred. The app uses these details only on your device, to count more accurately over time (for example, to decide how dark a room must be before it counts by depth).</p>
+    <p>This history is never uploaded, synced, or transmitted anywhere. Rakah Prayer Counter does not require or use any account, sign-in, or personal identifiers.</p>
 
     <h2>No Data Collection or Sharing</h2>
-    <p>Prayer Tracker does not collect, transmit, sell, or share any personal data with the developer, advertisers, analytics providers, or any other third party. The app contains no advertising or analytics SDKs.</p>
+    <p>Rakah Prayer Counter does not collect, transmit, sell, or share any personal data with the developer, advertisers, analytics providers, or any other third party. The app contains no advertising or analytics SDKs.</p>
 
     <h2>Children's Privacy</h2>
-    <p>Prayer Tracker does not knowingly collect information from anyone, including children, because it does not collect information at all.</p>
+    <p>Rakah Prayer Counter does not knowingly collect information from anyone, including children, because it does not collect information at all.</p>
 
     <h2>Changes to This Policy</h2>
     <p>If this policy changes, the "Last updated" date above will be revised accordingly.</p>
 
     <h2>Contact</h2>
-    <p>If you have any questions about this privacy policy, please contact <span class="todo">fatehkhatib@gmail.com</span>.</p>
+    <p>If you have any questions about this privacy policy, please contact <a href="mailto:fatehkhatib@gmail.com">fatehkhatib@gmail.com</a>.</p>
 
     <hr>
-    <p style="color: var(--muted); font-size: 0.85rem;">Prayer Tracker</p>
+    <p style="color: var(--muted); font-size: 0.85rem;">Rakah Prayer Counter</p>
   </div>
 </body>
 </html>
